@@ -6,3 +6,8 @@
    file:
     path: /opt/notes.txt
     state: touch
+
+ - name: write message in file
+   copy:
+    dest: /opt/notes.txt
+    content: 'Hello World'
