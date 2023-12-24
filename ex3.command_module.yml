@@ -3,4 +3,4 @@
  hosts: client1
  tasks: 
  - name: code to write to create directory
-   command: mkdir opt/USA
+   command: mkdir /opt/USA
