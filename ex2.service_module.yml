@@ -1,0 +1,8 @@
+-
+ name: playbook on service module
+ hosts: client1
+ tasks:
+ - name: code to write disable https services
+   service:
+    name: httpd
+    state: stopped
