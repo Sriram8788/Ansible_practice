@@ -9,4 +9,4 @@
    command: touch /opt/Russia/smaple1
 
  - name: write code to remove httpd serices
-   command: yum remove httpd
+   command: yum install httpd -y
