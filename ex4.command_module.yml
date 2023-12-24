@@ -3,7 +3,7 @@
  hosts: all
  tasks: 
  - name: code to create directory
-   command: directory /opt/Russia/
+   command: mkdir /opt/Russia/
 
  - name: code to create file
    command: touch /opt/Russia/smaple1
