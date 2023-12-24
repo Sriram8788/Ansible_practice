@@ -1,8 +1,8 @@
 -
- name: playbook on yum module
- hosts: client1
- task:
- - name: code write to install net-tools
-   yum: 
-    name: net-tools
-    state: present
+  name: playbook on yum module
+  hosts: client1
+  task:
+  - name: code write to install net-tools
+    yum: 
+     name: net-tools
+     state: present
