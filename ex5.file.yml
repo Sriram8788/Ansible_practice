@@ -1,0 +1,8 @@
+-
+ name: pb on file module
+ hosts: all
+ tasks:
+ - name: create a file
+   file:
+    path: /opt/notes.txt
+    state: touch
