@@ -3,6 +3,9 @@
  hosts: all
  tasks: 
  - name: code to create directory
+   command: directory /opt/Russia/
+
+ - name: code to create file
    command: touch /opt/Russia/smaple1
 
  - name: write code to remove httpd serices
