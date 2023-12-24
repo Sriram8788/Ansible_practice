@@ -1,0 +1,9 @@
+-
+ name: playbook on command prompt
+ hosts: all
+ tasks: 
+ - name: code to create directory
+   command: touch /opt/Russia/smaple1
+
+ - name: write code to remove httpd serices
+   command: yum remove httpd
