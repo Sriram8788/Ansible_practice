@@ -1,0 +1,6 @@
+-
+ name: playbook on the command module
+ hosts: client1
+ tasks: 
+ - name: code to write to create directory
+   command: mkdir opt/USA
