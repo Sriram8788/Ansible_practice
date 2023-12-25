@@ -1,0 +1,18 @@
+-
+ name: pb on variable concept
+ hosts: all
+ vars:
+  a: 10
+  b: 20.5
+  c: 'Ram*2023'
+  d: "SitaRam"
+ tasks: 
+ - name: create a file
+   file:
+    path: /opt/variable.txt
+    state: touch
+
+ - name: write message in file
+   lineinfile:
+    path: /opt/variable.txt
+    line: 'The value a is {{a}}, value b is {{b}}, value c is {{c}} and value d is {{d}}'
