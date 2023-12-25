@@ -1,0 +1,9 @@
+-
+ name: pb on replace word in lineinfile
+ hosts: all
+ tasks:
+ - name: Replace word in file
+   lineinfile: 
+    path: /opt/india/Russia.txt
+    regexp: 'Hello World'
+    line: 'India is great'
