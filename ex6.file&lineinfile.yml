@@ -1,0 +1,23 @@
+- 
+ name: pb on file and lineinfile
+ hosts: all
+ tasks: 
+ - name: code to create directory
+   file: 
+    path: /opt/india/
+    state: directory
+ 
+ - name: create a file
+   file: 
+    path: /opt/india/Russia.txt
+    state: touch
+
+ - name: write message in file
+   lineinfile: 
+    path: /opt/india/Russia.txt
+    line: 'Hello World'
+
+ - name: user permissions
+   file: 
+    path: /opt/india/Russia.txt
+    mode: u+x
