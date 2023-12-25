@@ -4,7 +4,7 @@
  tasks:
  - name: write to code on intallations tools using loops
    yum: 
-    name: {{ item }}
+    name: {{item}}
     state: present
    with_item:
    - git
