@@ -1,0 +1,9 @@
+- 
+ name: pb on loops future concept
+ hosts: client1
+ tasks:
+ - name: install apps
+   yum:
+    name: ['net-tools']
+    state: present
+    
