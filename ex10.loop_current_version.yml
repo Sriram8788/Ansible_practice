@@ -4,7 +4,7 @@
  tasks:
  - name: remove applications
    yum: 
-    state: absent
+    state: remove
     name: "{{ item }}"
    loop:
    - docker
@@ -13,6 +13,6 @@
  - name: stops services
    service:
     name: "{{ item }}"
-    state: stopped
+    state: enable
    loop:
    - httpd
