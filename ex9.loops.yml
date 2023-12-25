@@ -1,0 +1,13 @@
+-
+ name: pb on loops concept (old concept)
+ hosts: all
+ tasks:
+ - name: write to code on intallations tools using loops
+   yum: 
+    name: {{ item }}
+    state: present
+   with_item:
+   - git
+   - docker
+   - net-tools
+   - httpd
