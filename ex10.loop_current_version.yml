@@ -11,7 +11,7 @@
    - net-tools
 
  - name: stops services
-   services:
+   service:
     name: "{{ item }}"
     state: stopped
    loop:
